@@ -24,7 +24,9 @@ func getDSNWithUser(t *testing.T, dataSourceUrl string, username string, passwor
 func TestSqliteDataSourceNameAdapter_GetDataSourceNameWithoutUser(t *testing.T) {
 	dsn, err := getDSN(t, "gdbc:sqlite:test.db?cache=shared&mode=memory")
 	assert.Nil(t, err)
-	assert.Equal(t, dsn, "file:test.db?cache=shared&mode=memory")
+	assert.True(t, strings.HasPrefix(dsn, "file:test.db?"))
+	assert.Contains(t, dsn, "cache=shared")
+	assert.Contains(t, dsn, "mode=memory")
 }
 
 func TestSqliteDataSourceNameAdapter_GetDataSourceNameWithUserData(t *testing.T) {
