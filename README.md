@@ -23,6 +23,7 @@ Sqlite GDBC URL takes the following form:
 
 ```
 gdbc:sqlite:database-name?arg1=value1
+gdbc:sqlite:database-file-path?arg1=value1
 ```
 
 Checkout [https://github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3) for arguments details.
