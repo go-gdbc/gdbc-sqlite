@@ -1,5 +1,5 @@
 # gdbc-sqlite
-GDBC Sqlite Driver - It is based on https://github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
+GDBC Sqlite Driver - It is based on [github.com/mattn/go-sqlite3](github.com/mattn/go-sqlite3)
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-gdbc/gdbc-sqlite)](https://goreportcard.com/report/github.com/go-gdbc/gdbc-sqlite)
 [![codecov](https://codecov.io/gh/go-gdbc/gdbc-sqlite/branch/main/graph/badge.svg?token=1O1KF6HIHH)](https://codecov.io/gh/go-gdbc/gdbc-sqlite)
@@ -26,4 +26,4 @@ gdbc:sqlite:database-name?arg1=value1
 gdbc:sqlite:database-file-path?arg1=value1
 ```
 
-Checkout [https://github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3) for arguments details.
+Checkout [github.com/mattn/go-sqlite3](github.com/mattn/go-sqlite3) for arguments details.
